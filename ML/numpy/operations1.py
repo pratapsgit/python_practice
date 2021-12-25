@@ -33,10 +33,18 @@ def create_an_array_user_arange_step():
 def create_an_array_with_zeros():
     my_arr = np.zeros(7)
 
+    return my_arr
+
+def create_a_multi_array_with_zeros():
+    my_arr = np.zeros((4,5))
+
+    return my_arr
+
 if __name__ == "__main__":
     print(create_an_np_array())
     print(create_a_multi_np_array())
     print(create_an_array_user_arange())
     print(create_an_array_user_arange_step())
     print(create_an_array_with_zeros())
+    print(create_a_multi_array_with_zeros())
     print("We completed successfully!!!")
