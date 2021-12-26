@@ -88,6 +88,39 @@ def generate_n_rand_integers():
 
     return my_arr
 
+def generate_matrix_using_reshape():
+    my_arr = np.arange(25)
+
+    print(my_arr)
+
+    my_matrix = my_arr.reshape(5,5)
+
+    return my_matrix
+
+
+def get_details_about_array():
+    my_arr = np.random.randint(0, 100, 15)
+    #my_arr = np.arange(0, 40)
+
+    print(my_arr)
+
+    print("max " + str(my_arr.max()))
+
+    print("min " + str(my_arr.min()))
+
+    print("max value location " + str(my_arr.argmax()))
+
+    print("min value location " + str(my_arr.argmin()))
+
+    print("shape "+ str(my_arr.shape))
+
+    new_arr = my_arr.reshape(5, 3)
+
+    print(new_arr)
+
+    print("shape "+ str(new_arr.shape))
+
+    print("data type "+ str(my_arr.dtype))
 
 if __name__ == "__main__":
     print(create_an_np_array())
@@ -105,4 +138,6 @@ if __name__ == "__main__":
     print(generate_n_rand_numbers())
     print(generate_nn_rand_numbers())
     print(generate_n_rand_integers())
+    print(generate_matrix_using_reshape())
+    get_details_about_array()
     print("We completed successfully!!!")
