@@ -6,4 +6,4 @@ if __name__ == "__main__":
     lpb.execute_me()
 
     # problem solving
-    sot.execute_me()
+    #sot.execute_me()
